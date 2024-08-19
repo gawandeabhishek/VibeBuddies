@@ -8,9 +8,9 @@ import { Input } from "@/components/ui/input";
 import { useState } from "react";
 
 export default function navbar() {
-  const [theme, setTheme] = useState(false);
+  // const [theme, setTheme] = useState(false);
   return (
-    <nav className="flex justify-between px-10">
+    <nav className="flex justify-between px-10 gap-10">
       <div className="flex">
         <Link
           href="/saerch?q="
@@ -26,18 +26,18 @@ export default function navbar() {
           placeholder="Search"
           className={cn(
             buttonVariants({ variant: "secondary" }),
-            "py-1 px-4 rounded-tl-none rounded-bl-none focus-visible:ring-0ss focus-visible:ring-offset-0"
+            "py-1 px-4 rounded-tl-none rounded-bl-none focus-visible:ring-0 focus-visible:ring-offset-0"
           )}
         />
       </div>
       <div className="flex items-center gap-8 select-none">
         <Link
           href="/sign-in"
-          className={buttonVariants({ variant: "default" })}
+          className={cn(buttonVariants({ variant: "default" }), "font-semibold")}
         >
           Sign In
         </Link>
-        <div
+        {/* <div
           className={cn(
             buttonVariants({ variant: "secondary" }),
             "p-2 rounded-full cursor-pointer"
@@ -46,7 +46,7 @@ export default function navbar() {
           <div onClick={() => setTheme(!theme)}>
             {theme ? <Moon /> : <Sun />}
           </div>
-        </div>
+        </div> */}
       </div>
     </nav>
   );

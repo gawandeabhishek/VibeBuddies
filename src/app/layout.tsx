@@ -18,8 +18,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={cn(inter.className, "h-full w-full p-2 transition-all")}>
+    <html lang="en" className="dark">
+      <body className={cn(inter.className, "h-full w-full p-2 transition-all bg-card")}>
         <Navbar />
         {children}
       </body>
