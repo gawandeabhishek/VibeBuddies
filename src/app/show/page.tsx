@@ -13,8 +13,8 @@ export default function pages() {
   return (
     <main className="flex flex-col items-center">
       <div className="relative group flex flex-col items-center sm:items-start gap-10 mx-4 my-6 rounded-3xl">
-        <Image
-          src={movie.src}
+        <img
+          src="https://occ-0-8407-2705.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABewLMJrpIRVrZuhZu-k0UbVGDFq9LyhxGoBLt0dvCPNqR2A0r1IGAWF84dhFxLoCC4Nr41_X959XNeibIscm-Okg9zYjwLHCrEKGk95MKEzR2xaHxxaydUKPx5FP6NtOWPde-g.jpg?r=7f6"
           alt=""
           className="w-screen h-80 object-cover rounded-3xl z-0 group-hover:blur-[2px]"
         />
