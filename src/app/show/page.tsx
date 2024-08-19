@@ -1,5 +1,6 @@
 import { Movie } from "@/types";
 import { PlayCircle } from "lucide-react";
+import Image from "next/image";
 
 export default function pages() {
   const movie: Movie = {
@@ -12,7 +13,7 @@ export default function pages() {
   return (
     <main className="flex flex-col items-center">
       <div className="relative group flex flex-col items-center sm:items-start gap-10 mx-4 my-6 rounded-3xl">
-        <img
+        <Image
           src={movie.src}
           alt=""
           className="w-screen h-80 object-cover rounded-3xl z-0 group-hover:blur-[2px]"

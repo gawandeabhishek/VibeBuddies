@@ -13,8 +13,8 @@ export default function home() {
   };
   return (
     <main className="flex flex-col sm:flex-row flex-wrap items-center p-2 gap-6">
-      {array.map(() => (
-        <Link href="/show" className="flex items-center w-full justify-center">
+      {array.map((_, id) => (
+        <Link href="/show" className="flex items-center w-full justify-center" key={id}>
           <Item movie={movie} />
         </Link>
       ))}
