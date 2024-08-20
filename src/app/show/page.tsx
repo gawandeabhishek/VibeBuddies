@@ -18,17 +18,17 @@ export default function pages() {
           alt=""
           className="w-screen h-80 object-cover rounded-3xl z-0 group-hover:blur-[2px]"
         />
-        <div className="hidden group-hover:flex absolute flex-col sm:w-full gap-2 sm:gap-4 z-10 p-10 group-hover:bg-secondary/20 w-[90%] h-full">
-          <h4 className="text-4xl sm:text-6xl font-extrabold text-secondary-foreground w-fit">
+        <div className="hidden group-hover:flex absolute flex-col gap-2 sm:gap-4 z-10 p-4 sm:p-10 group-hover:bg-secondary/20 w-full sm:w-[90%] h-full">
+          <h4 className="text-2xl sm:text-6xl font-extrabold text-secondary-foreground w-fit">
             {movie.title}
           </h4>
-          <p className="text-xs sm:text-sm text-accent-foreground w-[80%]">
+          <p className="text-xs sm:text-sm text-accent-foreground w-[80%] line-clamp-3">
             {movie.description}
           </p>
           <span className="w-fit text-accent font-bold text-sm">
             {movie.releaseDate}
           </span>
-          <span className="hidden absolute inset-1/2 top-[40%] z-20 group-hover:block">
+          <span className="hidden absolute inset-1/2 top-[40%] left-[40%] sm:left-1/2 z-20 group-hover:block">
             <PlayCircle className="text-accent/60 h-20 w-20" />
           </span>
         </div>
