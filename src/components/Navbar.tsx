@@ -10,7 +10,7 @@ import { useState } from "react";
 export default function navbar() {
   // const [theme, setTheme] = useState(false);
   return (
-    <nav className="flex justify-between px-10 gap-10">
+    <nav className="flex justify-between px-4 sm:px-10 gap-10">
       <div className="flex">
         <Link
           href="/saerch?q="
